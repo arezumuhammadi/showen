@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/showen
+    username: showen
+    password: 1234
+
+  jpa:
+    database-platform: org.hibernate.spatial.dialect.postgis.PostgisDialect
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+minio:
+  bucket:
+    name: showen
+  default:
+    folder: "/"
+  access:
+     name: minioadmin
+     secret: minioadmin
+
+  url: http://127.0.0.1:9000
+
+
+
+
+
